@@ -1,103 +1,157 @@
 import Image from "next/image";
+import Link from "next/link";
+import { Check, Users, Layers, BarChart3, Leaf } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen bg-black text-white flex flex-col items-center px-4 py-12 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 opacity-10 pointer-events-none">
+        <Image src="/images/background-swirls.png" alt="" fill className="object-cover" priority />
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <div className="flex items-center gap-3 mb-12 z-10">
+        <h1 className="text-4xl font-bold">What Everyone Should Have</h1>
+      </div>
+
+      {/* Goals Section */}
+      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
+        {/* Performance Goals */}
+        <div className="bg-white rounded-lg overflow-hidden text-black relative hover:transform hover:-translate-y-1 hover:transition-all hover:duration-200 hover:shadow-lg">
+          <div className="h-2.5 w-full bg-gradient-to-r from-[#009CDE] to-[#00A7B5]"></div>
+          <div className="p-6">
+            <div className="flex items-center gap-4 mb-6">
+              <Image
+                src="/blue-tick.svg"
+                alt="Check"
+                width={56}
+                height={56}
+                className="text-white"
+              />
+
+              <h2 className="text-2xl font-bold">Performance Goals</h2>
+            </div>
+
+            <p className="mb-12">Aligned with FY26 Strategic Priorities - aim for 4-6.</p>
+
+            <div className="bg-[#D7F3FF] rounded-lg p-4 mb-4 border border-[#91DEFF]">
+              <p className="text-[#12536E]">
+                <span className="font-bold">Pro-tip: </span>
+                Make your goals SMART - Specific, Measurable, Achievable, Relevant and Time-bound.
+                Ask the SuccessFactors AI to help!
+              </p>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        {/* Learning Goals */}
+        <div className="bg-white rounded-lg overflow-hidden text-black relative hover:transform hover:-translate-y-1 hover:transition-all hover:duration-200 hover:shadow-lg">
+          <div className="h-2.5 w-full bg-gradient-to-r from-[#50A684] to-[#64A70B]"></div>
+          <div className="p-6">
+            <div className="flex items-center gap-4 mb-6">
+              <Image
+                src="/green-tick.svg"
+                alt="Check"
+                width={56}
+                height={56}
+                className="text-white"
+              />
+              <h2 className="text-2xl font-bold">Learning Goals</h2>
+            </div>
+
+            <p className="mb-6">
+              Focused on developing knowledge, skills and behaviours. Aim for 1-2 goals.
+            </p>
+
+            <div className="bg-[#DAFCEF] rounded-lg p-4 mb-4 border border-[#A6E4CB]">
+              <p className="text-[#126443]">
+                <span className="font-bold">Pro-tip: </span>
+                Chat with the{" "}
+                <Link
+                  href="https://www.linkedin.com/learning/ai-coaching"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#F0B941] hover:underline"
+                >
+                  LinkedIn Learning Coach
+                </Link>{" "}
+                to explore what you could learn. You can also attach learning to you Learning Goal!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Strategic Priorities Section */}
+      <div className="w-full max-w-6xl mb-12">
+        <h2 className="text-4xl font-bold text-center mb-4">Our Strategic Priorities</h2>
+        <p className="text-center max-w-3xl mx-auto mb-12">
+          When setting your goals, you'll be able to select a category under these priorities to
+          ensure alignment.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Develop Our People */}
+          <div className="bg-white rounded-lg overflow-hidden text-black hover:transform hover:-translate-y-1 hover:transition-all hover:duration-200 hover:shadow-lg">
+            <div className="bg-[#4A9ED6] p-3 flex justify-center">
+              <Image src="/people.svg" alt="Check" width={56} height={56} className="text-white" />
+            </div>
+            <div className="px-6 py-5">
+              <h3 className="text-2xl font-bold mb-1">Develop Our People</h3>
+              <p>Ensure our people thrive.</p>
+            </div>
+          </div>
+
+          {/* Improve Delivery Consistency */}
+          <div className="bg-white rounded-lg overflow-hidden text-black hover:transform hover:-translate-y-1 hover:transition-all hover:duration-200 hover:shadow-lg">
+            <div className="bg-[#5EB47E] p-3 flex justify-center">
+              <Image
+                src="/consistent.svg"
+                alt="Check"
+                width={56}
+                height={56}
+                className="text-white"
+              />
+            </div>
+            <div className="px-6 py-5">
+              <h3 className="text-2xl font-bold mb-1">Improve Delivery Consistency</h3>
+              <p>Via metrics, execution plans, tech & training.</p>
+            </div>
+          </div>
+
+          {/* Invest in Growth */}
+          <div className="bg-white rounded-lg overflow-hidden text-black hover:transform hover:-translate-y-1 hover:transition-all hover:duration-200 hover:shadow-lg">
+            <div className="bg-[#5EB47E] p-3 flex justify-center">
+              <Image src="/growth.svg" alt="Check" width={56} height={56} className="text-white" />
+            </div>
+            <div className="px-6 py-5">
+              <h3 className="text-2xl font-bold mb-1">Invest in Growth</h3>
+              <p>Focusing on Nuclear, STBGs, Strategic Solutions.</p>
+            </div>
+          </div>
+
+          {/* Drive Sustainability */}
+          <div className="bg-white rounded-lg overflow-hidden text-black hover:transform hover:-translate-y-1 hover:transition-all hover:duration-200 hover:shadow-lg">
+            <div className="bg-[#8CC152] p-3 flex justify-center">
+              <Image src="/leaf.svg" alt="Check" width={56} height={56} className="text-white" />
+            </div>
+            <div className="px-6 py-5">
+              <h3 className="text-2xl font-bold mb-1">Drive Sustainability</h3>
+              <p>Deliver ESG commitments and create value.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Review Button */}
+      <a
+        href="https://laingorourke.sharepoint.com/sites/igate/Pages/our-strategy.aspx"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block bg-[#F0B941] hover:bg-[#e0a930] text-black font-medium py-3 px-8 rounded-md transition-colors cursor-pointer"
+      >
+        Review Our Strategy
+      </a>
     </div>
   );
 }

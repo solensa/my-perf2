@@ -84,8 +84,23 @@ export default function Home() {
 
       {/* Strategic Priorities Section */}
       <div className="w-full max-w-6xl mb-12">
-        <h2 className="text-4xl font-bold text-center mb-4">Our Strategic Priorities</h2>
-        <p className="text-center max-w-3xl mx-auto mb-12">
+        {/* Decorative lines */}
+        <div className="relative">
+          <h2 className="text-4xl font-bold text-center mb-4 relative z-10">
+            Our Strategic Priorities
+          </h2>
+          <div className="absolute w-full max-w-6xl h-[193px] -top-20 left-1/2 -translate-x-1/2 pointer-events-none">
+            <Image
+              src="/lines2.svg"
+              alt=""
+              width={830}
+              height={167}
+              className="w-full h-full opacity-40"
+              priority
+            />
+          </div>
+        </div>
+        <p className="text-center max-w-3xl mx-auto mb-8">
           When setting your goals, you'll be able to select a category under these priorities to
           ensure alignment.
         </p>
@@ -93,7 +108,7 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Develop Our People */}
           <div className="bg-white rounded-lg overflow-hidden text-black hover:transform hover:-translate-y-1 hover:transition-all hover:duration-200 hover:shadow-lg">
-            <div className="bg-[#4A9ED6] p-3 flex justify-center">
+            <div className="bg-gradient-to-r from-[#019cde] to-[#189fac] p-3 flex justify-center">
               <Image src="/people.svg" alt="Check" width={56} height={56} className="text-white" />
             </div>
             <div className="px-6 py-5">
@@ -104,7 +119,7 @@ export default function Home() {
 
           {/* Improve Delivery Consistency */}
           <div className="bg-white rounded-lg overflow-hidden text-black hover:transform hover:-translate-y-1 hover:transition-all hover:duration-200 hover:shadow-lg">
-            <div className="bg-[#5EB47E] p-3 flex justify-center">
+            <div className="bg-gradient-to-r from-[#1a9fa8] to-[#2B8E6A] p-3 flex justify-center">
               <Image
                 src="/consistent.svg"
                 alt="Check"
@@ -121,7 +136,7 @@ export default function Home() {
 
           {/* Invest in Growth */}
           <div className="bg-white rounded-lg overflow-hidden text-black hover:transform hover:-translate-y-1 hover:transition-all hover:duration-200 hover:shadow-lg">
-            <div className="bg-[#5EB47E] p-3 flex justify-center">
+            <div className="bg-gradient-to-r from-[#33A273] to-[#4AA441] p-3 flex justify-center">
               <Image src="/growth.svg" alt="Check" width={56} height={56} className="text-white" />
             </div>
             <div className="px-6 py-5">
@@ -132,7 +147,7 @@ export default function Home() {
 
           {/* Drive Sustainability */}
           <div className="bg-white rounded-lg overflow-hidden text-black hover:transform hover:-translate-y-1 hover:transition-all hover:duration-200 hover:shadow-lg">
-            <div className="bg-[#8CC152] p-3 flex justify-center">
+            <div className="bg-gradient-to-r from-[#4DA43D] to-[#64A70B] p-3 flex justify-center">
               <Image src="/leaf.svg" alt="Check" width={56} height={56} className="text-white" />
             </div>
             <div className="px-6 py-5">
@@ -148,7 +163,7 @@ export default function Home() {
         href="https://laingorourke.sharepoint.com/sites/igate/Pages/our-strategy.aspx"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block bg-[#F0B941] hover:bg-[#e0a930] text-black font-medium py-3 px-8 rounded-md transition-colors cursor-pointer"
+        className="inline-block bg-[#FFCD00] hover:bg-[#e0a930] text-black font-medium py-3 px-8 rounded-md transition-colors cursor-pointer"
       >
         Review Our Strategy
       </a>

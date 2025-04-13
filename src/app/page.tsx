@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Check, Users, Layers, BarChart3, Leaf } from "lucide-react";
 
 export default function Home() {
   return (
@@ -109,8 +108,8 @@ export default function Home() {
           </div>
         </div>
         <p className="text-center max-w-3xl mx-auto mb-8">
-          When setting your goals, you'll be able to select a category under these priorities to
-          ensure alignment.
+          When setting your goals, you&apos;ll be able to select a category under these priorities
+          to ensure alignment.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

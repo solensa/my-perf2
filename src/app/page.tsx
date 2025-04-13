@@ -4,11 +4,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center px-4 py-12 relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 opacity-10 pointer-events-none">
-        <Image src="/images/background-swirls.png" alt="" fill className="object-cover" priority />
-      </div>
-
       <div className="flex items-center gap-3 mb-12 z-10">
         <h1 className="text-4xl font-bold">What Everyone Should Have</h1>
       </div>

@@ -25,13 +25,13 @@ export default function Home() {
               <h2 className="text-2xl font-bold">Performance Goals</h2>
             </div>
 
-            <p className="mb-12">Aligned with FY26 Strategic Priorities - aim for 4-6.</p>
+            <p className="mb-12">Aligned with FY26 Strategic Priorities, aim for 4-6.</p>
 
             <div className="bg-[#D7F3FF] rounded-lg p-4 mb-4 border border-[#91DEFF]">
               <p className="text-[#12536E]">
                 <span className="font-bold">Pro-tip: </span>
-                Make your goals SMART - Specific, Measurable, Achievable, Relevant and Time-bound.
-                Ask the SuccessFactors AI to help!
+                Make your goals SIMple - Specific, Important, Measurable. Ask the SuccessFactors AI
+                Coach to help!
               </p>
             </div>
           </div>

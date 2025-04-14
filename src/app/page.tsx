@@ -114,7 +114,7 @@ export default function Home() {
               <Image src="/people.svg" alt="Check" width={56} height={56} className="text-white" />
             </div>
             <div className="px-6 py-5">
-              <h3 className="text-2xl font-bold mb-1">Develop Our People</h3>
+              <h3 className="text-2xl font-bold mb-1">People Ambition</h3>
               <p>Ensure our people thrive.</p>
             </div>
           </div>

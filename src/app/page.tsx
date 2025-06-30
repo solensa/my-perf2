@@ -162,7 +162,7 @@ export default function Home() {
 
       {/* Review Button */}
       <a
-        href="https://laingorourke.sharepoint.com/sites/igate/Pages/our-strategy.aspx"
+        href="https://lorprod.workzonehr.cfapps.eu10.hana.ondemand.com/site#workzone-home&/home/mTkE3onMM9dv6cFu687Qq2"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-block bg-[#FFCD00] hover:bg-[#e0a930] text-black font-medium py-3 px-8 rounded-md transition-colors cursor-pointer"

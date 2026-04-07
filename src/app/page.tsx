@@ -25,7 +25,7 @@ export default function Home() {
               <h2 className="text-2xl font-bold">Performance Goals</h2>
             </div>
 
-            <p className="mb-12">Aligned with FY26 Strategic Priorities, aim for 4-6.</p>
+            <p className="mb-12">Aligned with FY27 Strategic Priorities, aim for 4-6.</p>
 
             <div className="bg-[#D7F3FF] rounded-lg p-4 mb-4 border border-[#91DEFF]">
               <p className="text-[#12536E]">
@@ -88,7 +88,7 @@ export default function Home() {
         {/* Decorative lines */}
         <div className="relative">
           <h2 className="text-4xl font-bold text-center mb-4 relative z-10">
-            Our Strategic Priorities
+            Our FY27 Delivery Plan
           </h2>
 
           <div className="absolute w-full max-w-6xl h-[193px] -top-20 left-1/2 -translate-x-1/2 pointer-events-none">
